@@ -1,16 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Quiz from "./pages/Quiz";
-import Result from "./pages/Result";
-import Contact from "./pages/Contact";
-import Login from "./pages/login";
-import Progress from "./pages/progress";
-
-/* =========================
-   PUBLIC ROUTE
-========================= */
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Quiz from "./pages/Quiz.jsx";
+import Result from "./pages/Result.jsx";
+import Contact from "./pages/Contact.jsx";
+import Login from "./pages/Login.jsx";
+import Progress from "./pages/Progress.jsx";
 
 function PublicRoute({ children }) {
   const token = localStorage.getItem("quizNovaToken");
@@ -22,10 +18,6 @@ function PublicRoute({ children }) {
   return children;
 }
 
-/* =========================
-   PRIVATE ROUTE
-========================= */
-
 function PrivateRoute({ children }) {
   const token = localStorage.getItem("quizNovaToken");
 
@@ -36,22 +28,12 @@ function PrivateRoute({ children }) {
   return children;
 }
 
-/* =========================
-   APP
-========================= */
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
 
-        {/* Root */}
-        <Route
-          path="/"
-          element={<Navigate to="/login" replace />}
-        />
-
-        {/* Public Login */}
         <Route
           path="/login"
           element={
@@ -61,7 +43,6 @@ function App() {
           }
         />
 
-        {/* Protected Home */}
         <Route
           path="/home"
           element={
@@ -71,7 +52,6 @@ function App() {
           }
         />
 
-        {/* Protected Quiz */}
         <Route
           path="/quiz"
           element={
@@ -81,7 +61,6 @@ function App() {
           }
         />
 
-        {/* Protected Result */}
         <Route
           path="/result"
           element={
@@ -91,7 +70,6 @@ function App() {
           }
         />
 
-        {/* Protected About */}
         <Route
           path="/about"
           element={
@@ -101,7 +79,6 @@ function App() {
           }
         />
 
-        {/* Protected Contact */}
         <Route
           path="/contact"
           element={
@@ -110,24 +87,19 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route
-  path="/progress"
-  element={
-    <PrivateRoute>
-      <Progress />
-    </PrivateRoute>
-  }
-/>
 
-        {/* Invalid URL */}
         <Route
-          path="*"
-          element={<Navigate to="/login" replace />}
+          path="/progress"
+          element={
+            <PrivateRoute>
+              <Progress />
+            </PrivateRoute>
+          }
         />
 
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
-    
   );
 }
 
