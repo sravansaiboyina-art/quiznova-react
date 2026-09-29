@@ -1,0 +1,37 @@
+/* ==================================
+ABOUT PAGE
+================================== */
+
+.about-hero{
+
+background:linear-gradient(135deg,#eef4ff,#ffffff);
+
+padding:100px 0;
+
+}
+
+.about-hero h1{
+
+font-size:55px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.about-hero p{
+
+font-size:18px;
+
+margin-bottom:30px;
+
+line-height:1.8;
+
+}
+
+.about-hero img{
+
+animation:float 4s infinite ease-in-out;
+
+}

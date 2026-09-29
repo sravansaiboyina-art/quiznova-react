@@ -1,0 +1,621 @@
+/* =====================================================
+   QUIZNOVA - RESULT PAGE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f6f8fc;
+    color: #20243a;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    color: #5b4bdb !important;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 7px;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #5b4bdb !important;
+}
+
+
+/* =====================================================
+   RESULT PAGE
+===================================================== */
+
+.result-page {
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+
+/* =====================================================
+   RESULT HEADER
+===================================================== */
+
+.result-header {
+    margin-bottom: 35px;
+}
+
+.success-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eeeaff;
+    color: #5b4bdb;
+
+    font-size: 2.2rem;
+}
+
+.result-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.result-header p {
+    color: #70758a;
+    font-size: 1rem;
+}
+
+
+/* =====================================================
+   STUDENT CARD
+===================================================== */
+
+.student-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+
+    box-shadow: 0 8px 30px rgba(50, 50, 93, 0.08);
+
+    margin-bottom: 25px;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.student-info > i {
+    font-size: 3rem;
+    color: #5b4bdb;
+}
+
+.student-info span,
+.detail-item span {
+    display: block;
+    color: #85899c;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.student-info h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.detail-item {
+    padding: 10px;
+}
+
+.detail-item strong {
+    display: block;
+    font-size: 1rem;
+}
+
+
+/* =====================================================
+   RESULT CARDS
+===================================================== */
+
+.result-card {
+    height: 100%;
+    background: #ffffff;
+
+    border-radius: 18px;
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(50, 50, 93, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 35px rgba(50, 50, 93, 0.12);
+}
+
+.result-card-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eeeaff;
+    color: #5b4bdb;
+
+    font-size: 1.4rem;
+}
+
+.result-card-icon.correct {
+    background: #e8f8ef;
+    color: #1d9b58;
+}
+
+.result-card-icon.wrong {
+    background: #fff0f0;
+    color: #e04c4c;
+}
+
+.result-card-icon.percentage {
+    background: #fff7e6;
+    color: #d88a00;
+}
+
+.result-card span {
+    display: block;
+    color: #85899c;
+    font-size: 0.85rem;
+}
+
+.result-card h2 {
+    margin: 5px 0 0;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   PERFORMANCE CARD
+===================================================== */
+
+.performance-card {
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 30px rgba(50, 50, 93, 0.08);
+}
+
+.performance-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.performance-content > div:first-child {
+    flex: 1;
+}
+
+.performance-content span {
+    color: #85899c;
+    font-size: 0.9rem;
+}
+
+.performance-content h2 {
+    margin: 5px 0;
+
+    color: #5b4bdb;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.performance-content p {
+    color: #70758a;
+    margin: 0;
+}
+
+
+/* =====================================================
+   PERFORMANCE CIRCLE
+===================================================== */
+
+.performance-circle {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    background: #eeeaff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 8px solid #dcd5ff;
+}
+
+.performance-circle span {
+    color: #5b4bdb;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   REVIEW SECTION
+===================================================== */
+
+.review-section {
+    margin-top: 50px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.section-heading h2 i {
+    color: #5b4bdb;
+    margin-right: 8px;
+}
+
+.section-heading p {
+    color: #70758a;
+}
+
+
+/* =====================================================
+   REVIEW QUESTION
+===================================================== */
+
+.review-question {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(50, 50, 93, 0.07);
+
+    border-left: 5px solid #5b4bdb;
+}
+
+.review-question.correct-question {
+    border-left-color: #1d9b58;
+}
+
+.review-question.wrong-question {
+    border-left-color: #e04c4c;
+}
+
+.review-question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.review-question-number {
+    font-weight: 600;
+    color: #5b4bdb;
+}
+
+.review-status {
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.review-status.correct {
+    background: #e8f8ef;
+    color: #1d9b58;
+}
+
+.review-status.wrong {
+    background: #fff0f0;
+    color: #e04c4c;
+}
+
+.review-question h5 {
+    font-size: 1rem;
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   ANSWER BOXES
+===================================================== */
+
+.answer-box {
+    padding: 12px 15px;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+
+    font-size: 0.9rem;
+}
+
+.answer-box.your-answer {
+    background: #f5f3ff;
+    color: #4e43b8;
+}
+
+.answer-box.correct-answer {
+    background: #e8f8ef;
+    color: #167b45;
+}
+
+.answer-box.wrong-answer {
+    background: #fff0f0;
+    color: #c43c3c;
+}
+
+.answer-box strong {
+    display: block;
+
+    font-size: 0.75rem;
+
+    margin-bottom: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   RESULT ACTION BUTTONS
+===================================================== */
+
+.result-actions {
+    margin-top: 40px;
+}
+
+.result-actions .btn {
+    min-width: 170px;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+.result-actions .btn-primary {
+    background: #5b4bdb;
+    border-color: #5b4bdb;
+}
+
+.result-actions .btn-primary:hover {
+    background: #4939c5;
+    border-color: #4939c5;
+}
+
+.result-actions .btn-outline-primary {
+    color: #5b4bdb;
+    border-color: #5b4bdb;
+}
+
+.result-actions .btn-outline-primary:hover {
+    background: #5b4bdb;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.result-footer {
+    background: #ffffff;
+
+    border-top: 1px solid #e9e9ef;
+
+    padding: 22px 0;
+
+    text-align: center;
+}
+
+.result-footer p {
+    margin: 0;
+
+    color: #85899c;
+
+    font-size: 0.85rem;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .result-page {
+        padding-top: 80px;
+    }
+
+    .result-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .student-info {
+        margin-bottom: 15px;
+    }
+
+    .detail-item {
+        padding-left: 0;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .result-page {
+        padding-top: 75px;
+    }
+
+    .result-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+
+        font-size: 1.8rem;
+    }
+
+    .student-card {
+        padding: 20px;
+    }
+
+    .student-info {
+        margin-bottom: 20px;
+    }
+
+    .detail-item {
+        padding: 8px 0;
+    }
+
+    .performance-card {
+        padding: 22px;
+    }
+
+    .performance-content {
+        gap: 20px;
+    }
+
+    .performance-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .performance-circle {
+        width: 85px;
+        height: 85px;
+
+        border-width: 6px;
+    }
+
+    .performance-circle span {
+        font-size: 1rem;
+    }
+
+    .review-question {
+        padding: 18px;
+    }
+
+    .review-question-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .result-actions .btn {
+        width: 100%;
+        margin: 5px 0 !important;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .result-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .result-header p {
+        font-size: 0.85rem;
+    }
+
+    .result-card {
+        padding: 18px 10px;
+    }
+
+    .result-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .result-card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .performance-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .performance-circle {
+        margin-top: 10px;
+    }
+
+}

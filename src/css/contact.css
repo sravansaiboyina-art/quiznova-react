@@ -1,0 +1,682 @@
+/* =====================================================
+   QUIZNOVA - CONTACT PAGE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f8fc;
+    color: #20243a;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    color: #5b4bdb !important;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 7px;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #5b4bdb !important;
+}
+
+
+/* =====================================================
+   CONTACT HERO
+===================================================== */
+
+.contact-hero {
+    padding-top: 150px;
+    padding-bottom: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #f1efff,
+        #ffffff
+    );
+
+    text-align: center;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: #eeeaff;
+    color: #5b4bdb;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.contact-hero h1 {
+    margin-top: 20px;
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contact-hero h1 span {
+    color: #5b4bdb;
+}
+
+.contact-hero p {
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    color: #70758a;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    background: #f7f8fc;
+}
+
+
+/* =====================================================
+   CONTACT INFORMATION
+===================================================== */
+
+.contact-info {
+    padding: 20px 10px;
+}
+
+.section-label {
+    display: inline-block;
+
+    color: #5b4bdb;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.contact-info h2 {
+    margin-top: 12px;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.contact-info > p {
+    margin-top: 15px;
+
+    color: #70758a;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   CONTACT INFO ITEMS
+===================================================== */
+
+.contact-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.contact-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eeeaff;
+
+    color: #5b4bdb;
+
+    font-size: 1.2rem;
+}
+
+.contact-info-item span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #85899c;
+
+    font-size: 0.8rem;
+}
+
+.contact-info-item strong {
+    font-size: 0.95rem;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SOCIAL MEDIA
+===================================================== */
+
+.contact-social {
+    margin-top: 35px;
+}
+
+.contact-social h5 {
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #5b4bdb;
+
+    box-shadow:
+        0 5px 18px rgba(50, 50, 93, 0.08);
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #5b4bdb;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   CONTACT FORM CARD
+===================================================== */
+
+.contact-form-card {
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(50, 50, 93, 0.08);
+}
+
+.form-header {
+    margin-bottom: 25px;
+}
+
+.form-header h3 {
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.form-header p {
+    color: #85899c;
+
+    font-size: 0.9rem;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-label {
+    font-weight: 600;
+
+    font-size: 0.85rem;
+
+    color: #36394d;
+}
+
+.input-group-text {
+    background: #f7f6ff;
+
+    border-color: #e2e3ed;
+
+    color: #5b4bdb;
+}
+
+.form-control {
+    border-color: #e2e3ed;
+
+    padding: 12px 14px;
+
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    border-color: #5b4bdb;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(
+            91,
+            75,
+            219,
+            0.12
+        );
+}
+
+textarea.form-control {
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.contact-submit {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    background: #5b4bdb;
+
+    border-color: #5b4bdb;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: #4939c5;
+
+    border-color: #4939c5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   SUCCESS MESSAGE
+===================================================== */
+
+.contact-success {
+    margin-top: 20px;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    background: #e8f8ef;
+
+    color: #167b45;
+
+    font-size: 0.85rem;
+
+    font-weight: 500;
+}
+
+.contact-success i {
+    margin-right: 7px;
+}
+
+
+/* =====================================================
+   FAQ SECTION
+===================================================== */
+
+.faq-section {
+    background: #ffffff;
+}
+
+.faq-section h2 {
+    margin-top: 10px;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+}
+
+.faq-section > .container > .text-center p {
+    color: #70758a;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   ACCORDION
+===================================================== */
+
+.accordion {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: none;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px !important;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(50, 50, 93, 0.06);
+}
+
+.accordion-button {
+    padding: 18px 20px;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    color: #20243a;
+
+    background: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #5b4bdb;
+
+    background: #f7f6ff;
+
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow:
+        0 0 0 0.15rem rgba(
+            91,
+            75,
+            219,
+            0.12
+        );
+}
+
+.accordion-body {
+    color: #70758a;
+
+    font-size: 0.88rem;
+
+    line-height: 1.8;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.contact-footer {
+    background: #20243a;
+
+    padding: 45px 0 25px;
+
+    color: #ffffff;
+}
+
+.footer-brand {
+    display: inline-block;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.footer-brand i {
+    color: #a99cff;
+
+    margin-right: 7px;
+}
+
+.contact-footer p {
+    color: #b7b9c8;
+
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #d1d2dc;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a99cff;
+}
+
+.contact-footer hr {
+    border-color: rgba(
+        255,
+        255,
+        255,
+        0.12
+    );
+
+    margin: 25px 0;
+}
+
+.contact-footer small {
+    color: #8f92a5;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .contact-hero {
+        padding-top: 130px;
+
+        padding-bottom: 65px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info {
+        padding: 0;
+    }
+
+    .contact-form-card {
+        padding: 30px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .contact-hero {
+        padding-top: 115px;
+
+        padding-bottom: 55px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero p {
+        font-size: 0.88rem;
+
+        padding: 0 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form-card {
+        padding: 22px;
+
+        border-radius: 15px;
+    }
+
+    .form-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .faq-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .accordion-button {
+        font-size: 0.85rem;
+
+        padding: 15px;
+    }
+
+    .accordion-body {
+        font-size: 0.82rem;
+
+        padding: 15px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .contact-badge {
+        font-size: 0.75rem;
+
+        padding: 7px 13px;
+    }
+
+    .contact-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .contact-info-item {
+        gap: 10px;
+    }
+
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 1rem;
+    }
+
+    .contact-info-item strong {
+        font-size: 0.82rem;
+    }
+
+    .contact-form-card {
+        padding: 18px;
+    }
+
+}

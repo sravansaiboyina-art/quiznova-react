@@ -1,0 +1,212 @@
+{
+  "info": {
+    "name": "QuizNova API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Test Student\",\n  \"email\": \"student@example.com\",\n  \"password\": \"Password123\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/register",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"student@example.com\",\n  \"password\": \"Password123\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Current User",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "me"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Question Metadata",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/questions/meta",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "questions",
+            "meta"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Questions",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/questions?category=HTML&difficulty=Easy&limit=5",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "questions"
+          ],
+          "query": [
+            {
+              "key": "category",
+              "value": "HTML"
+            },
+            {
+              "key": "difficulty",
+              "value": "Easy"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Submit Quiz",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"HTML\",\n  \"difficulty\": \"Easy\",\n  \"studentName\": \"Test Student\",\n  \"answers\": [\n    {\"questionId\": 1, \"selectedAnswer\": \"Hyper Text Markup Language\"},\n    {\"questionId\": 2, \"selectedAnswer\": \"<a>\"}\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/quizzes/submit",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "quizzes",
+            "submit"
+          ]
+        }
+      }
+    },
+    {
+      "name": "My Results",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/quizzes/my-results",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "quizzes",
+            "my-results"
+          ]
+        }
+      }
+    }
+  ]
+}

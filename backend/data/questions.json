@@ -1,0 +1,2732 @@
+[
+  {
+    "id": 1,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which HTML tag creates a hyperlink?",
+    "options": [
+      "<a>",
+      "<link>",
+      "<href>",
+      "<url>"
+    ],
+    "answer": "<a>"
+  },
+  {
+    "id": 3,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag inserts an image?",
+    "options": [
+      "<img>",
+      "<image>",
+      "<picture>",
+      "<src>"
+    ],
+    "answer": "<img>"
+  },
+  {
+    "id": 4,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag creates the largest heading?",
+    "options": [
+      "<h1>",
+      "<h6>",
+      "<head>",
+      "<title>"
+    ],
+    "answer": "<h1>"
+  },
+  {
+    "id": 5,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag creates a line break?",
+    "options": [
+      "<br>",
+      "<hr>",
+      "<p>",
+      "<break>"
+    ],
+    "answer": "<br>"
+  },
+  {
+    "id": 6,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag defines a paragraph?",
+    "options": [
+      "<p>",
+      "<para>",
+      "<text>",
+      "<paragraph>"
+    ],
+    "answer": "<p>"
+  },
+  {
+    "id": 7,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag creates an unordered list?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ul>"
+  },
+  {
+    "id": 8,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which attribute specifies an image path?",
+    "options": [
+      "src",
+      "href",
+      "alt",
+      "link"
+    ],
+    "answer": "src"
+  },
+  {
+    "id": 9,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag defines a button?",
+    "options": [
+      "<button>",
+      "<btn>",
+      "<input-button>",
+      "<click>"
+    ],
+    "answer": "<button>"
+  },
+  {
+    "id": 10,
+    "category": "HTML",
+    "difficulty": "Easy",
+    "question": "Which tag defines the document title?",
+    "options": [
+      "<title>",
+      "<head>",
+      "<name>",
+      "<caption>"
+    ],
+    "answer": "<title>"
+  },
+  {
+    "id": 11,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag creates a table?",
+    "options": [
+      "<table>",
+      "<tr>",
+      "<td>",
+      "<th>"
+    ],
+    "answer": "<table>"
+  },
+  {
+    "id": 12,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag creates a table row?",
+    "options": [
+      "<tr>",
+      "<row>",
+      "<td>",
+      "<table-row>"
+    ],
+    "answer": "<tr>"
+  },
+  {
+    "id": 13,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag defines a table header cell?",
+    "options": [
+      "<th>",
+      "<thead-cell>",
+      "<header>",
+      "<tdh>"
+    ],
+    "answer": "<th>"
+  },
+  {
+    "id": 14,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which element contains page metadata?",
+    "options": [
+      "<head>",
+      "<body>",
+      "<footer>",
+      "<section>"
+    ],
+    "answer": "<head>"
+  },
+  {
+    "id": 15,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag creates a form?",
+    "options": [
+      "<form>",
+      "<input>",
+      "<button>",
+      "<label>"
+    ],
+    "answer": "<form>"
+  },
+  {
+    "id": 16,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which input type creates a checkbox?",
+    "options": [
+      "checkbox",
+      "check",
+      "tick",
+      "select"
+    ],
+    "answer": "checkbox"
+  },
+  {
+    "id": 17,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which attribute makes an input mandatory?",
+    "options": [
+      "required",
+      "must",
+      "validate",
+      "needed"
+    ],
+    "answer": "required"
+  },
+  {
+    "id": 18,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag is used for a semantic article?",
+    "options": [
+      "<article>",
+      "<content>",
+      "<post>",
+      "<story>"
+    ],
+    "answer": "<article>"
+  },
+  {
+    "id": 19,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which tag represents navigation links?",
+    "options": [
+      "<nav>",
+      "<navigation>",
+      "<menu>",
+      "<links>"
+    ],
+    "answer": "<nav>"
+  },
+  {
+    "id": 20,
+    "category": "HTML",
+    "difficulty": "Medium",
+    "question": "Which attribute provides alternative text for an image?",
+    "options": [
+      "alt",
+      "title",
+      "src",
+      "description"
+    ],
+    "answer": "alt"
+  },
+  {
+    "id": 21,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which element represents the main content of a document?",
+    "options": [
+      "<main>",
+      "<content>",
+      "<section>",
+      "<article>"
+    ],
+    "answer": "<main>"
+  },
+  {
+    "id": 22,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which element embeds another webpage?",
+    "options": [
+      "<iframe>",
+      "<frame>",
+      "<embedpage>",
+      "<web>"
+    ],
+    "answer": "<iframe>"
+  },
+  {
+    "id": 23,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which input type selects a date?",
+    "options": [
+      "date",
+      "calendar",
+      "datetime",
+      "day"
+    ],
+    "answer": "date"
+  },
+  {
+    "id": 24,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which HTML element is intended for self-contained content?",
+    "options": [
+      "<article>",
+      "<section>",
+      "<div>",
+      "<aside>"
+    ],
+    "answer": "<article>"
+  },
+  {
+    "id": 25,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which element is used for machine-readable date/time information?",
+    "options": [
+      "<time>",
+      "<date>",
+      "<datetime>",
+      "<clock>"
+    ],
+    "answer": "<time>"
+  },
+  {
+    "id": 26,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which attribute connects a label to an input?",
+    "options": [
+      "for",
+      "connect",
+      "target",
+      "input-id"
+    ],
+    "answer": "for"
+  },
+  {
+    "id": 27,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which attribute specifies the HTTP method of a form?",
+    "options": [
+      "method",
+      "action",
+      "type",
+      "request"
+    ],
+    "answer": "method"
+  },
+  {
+    "id": 28,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which element groups related form controls?",
+    "options": [
+      "<fieldset>",
+      "<group>",
+      "<formgroup>",
+      "<legend-group>"
+    ],
+    "answer": "<fieldset>"
+  },
+  {
+    "id": 29,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which element provides a caption for a fieldset?",
+    "options": [
+      "<legend>",
+      "<caption>",
+      "<label>",
+      "<title>"
+    ],
+    "answer": "<legend>"
+  },
+  {
+    "id": 30,
+    "category": "HTML",
+    "difficulty": "Hard",
+    "question": "Which HTML attribute enables browser autocomplete?",
+    "options": [
+      "autocomplete",
+      "autosuggest",
+      "remember",
+      "suggest"
+    ],
+    "answer": "autocomplete"
+  },
+  {
+    "id": 31,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes text color?",
+    "options": [
+      "color",
+      "background",
+      "font-color",
+      "text"
+    ],
+    "answer": "color"
+  },
+  {
+    "id": 32,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes background color?",
+    "options": [
+      "background-color",
+      "color",
+      "bgcolor",
+      "background-image"
+    ],
+    "answer": "background-color"
+  },
+  {
+    "id": 33,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes font size?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size",
+      "font"
+    ],
+    "answer": "font-size"
+  },
+  {
+    "id": 34,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property makes text bold?",
+    "options": [
+      "font-weight",
+      "font-style",
+      "text-bold",
+      "weight"
+    ],
+    "answer": "font-weight"
+  },
+  {
+    "id": 35,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property adds space inside an element?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "gap"
+    ],
+    "answer": "padding"
+  },
+  {
+    "id": 36,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property adds space outside an element?",
+    "options": [
+      "margin",
+      "padding",
+      "border",
+      "space"
+    ],
+    "answer": "margin"
+  },
+  {
+    "id": 37,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes the font family?",
+    "options": [
+      "font-family",
+      "font-type",
+      "typeface",
+      "font-style"
+    ],
+    "answer": "font-family"
+  },
+  {
+    "id": 38,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property centers text horizontally?",
+    "options": [
+      "text-align",
+      "align-text",
+      "horizontal-align",
+      "center"
+    ],
+    "answer": "text-align"
+  },
+  {
+    "id": 39,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes the width of an element?",
+    "options": [
+      "width",
+      "size",
+      "element-width",
+      "length"
+    ],
+    "answer": "width"
+  },
+  {
+    "id": 40,
+    "category": "CSS",
+    "difficulty": "Easy",
+    "question": "Which property changes the height of an element?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "length"
+    ],
+    "answer": "height"
+  },
+  {
+    "id": 41,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which CSS property creates a flex container?",
+    "options": [
+      "display",
+      "flex",
+      "position",
+      "layout"
+    ],
+    "answer": "display"
+  },
+  {
+    "id": 42,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which display value creates a flex container?",
+    "options": [
+      "flex",
+      "block",
+      "grid",
+      "inline"
+    ],
+    "answer": "flex"
+  },
+  {
+    "id": 43,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property controls space outside an element?",
+    "options": [
+      "margin",
+      "padding",
+      "border",
+      "spacing"
+    ],
+    "answer": "margin"
+  },
+  {
+    "id": 44,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property creates rounded corners?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius",
+      "border-round"
+    ],
+    "answer": "border-radius"
+  },
+  {
+    "id": 45,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property controls transparency?",
+    "options": [
+      "opacity",
+      "visibility",
+      "transparent",
+      "alpha"
+    ],
+    "answer": "opacity"
+  },
+  {
+    "id": 46,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property changes the order of flex items?",
+    "options": [
+      "order",
+      "flex-order",
+      "item-order",
+      "sequence"
+    ],
+    "answer": "order"
+  },
+  {
+    "id": 47,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property aligns flex items along the cross axis?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-align",
+      "align-content"
+    ],
+    "answer": "align-items"
+  },
+  {
+    "id": 48,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property sets the direction of a flex container?",
+    "options": [
+      "flex-direction",
+      "direction",
+      "flow-direction",
+      "flex-flow-direction"
+    ],
+    "answer": "flex-direction"
+  },
+  {
+    "id": 49,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property controls spacing between characters?",
+    "options": [
+      "letter-spacing",
+      "word-spacing",
+      "text-spacing",
+      "character-gap"
+    ],
+    "answer": "letter-spacing"
+  },
+  {
+    "id": 50,
+    "category": "CSS",
+    "difficulty": "Medium",
+    "question": "Which property controls spacing between words?",
+    "options": [
+      "word-spacing",
+      "letter-spacing",
+      "text-gap",
+      "word-gap"
+    ],
+    "answer": "word-spacing"
+  },
+  {
+    "id": 51,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which CSS layout system is designed for two-dimensional layouts?",
+    "options": [
+      "CSS Grid",
+      "Flexbox",
+      "Float",
+      "Position"
+    ],
+    "answer": "CSS Grid"
+  },
+  {
+    "id": 52,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which pseudo-class applies when the pointer is over an element?",
+    "options": [
+      ":hover",
+      ":mouse",
+      ":over",
+      ":pointer"
+    ],
+    "answer": ":hover"
+  },
+  {
+    "id": 53,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which property controls stacking order?",
+    "options": [
+      "z-index",
+      "stack-index",
+      "layer",
+      "position-index"
+    ],
+    "answer": "z-index"
+  },
+  {
+    "id": 54,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which unit is relative to the root element's font size?",
+    "options": [
+      "rem",
+      "em",
+      "px",
+      "vh"
+    ],
+    "answer": "rem"
+  },
+  {
+    "id": 55,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which property defines CSS transitions?",
+    "options": [
+      "transition",
+      "transform",
+      "animation",
+      "change"
+    ],
+    "answer": "transition"
+  },
+  {
+    "id": 56,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which function calculates a CSS value from expressions?",
+    "options": [
+      "calc()",
+      "compute()",
+      "value()",
+      "math()"
+    ],
+    "answer": "calc()"
+  },
+  {
+    "id": 57,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which rule is used for responsive styles?",
+    "options": [
+      "@media",
+      "@responsive",
+      "@screen",
+      "@viewport"
+    ],
+    "answer": "@media"
+  },
+  {
+    "id": 58,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which property controls how an image fits inside its box?",
+    "options": [
+      "object-fit",
+      "image-fit",
+      "fit-object",
+      "background-fit"
+    ],
+    "answer": "object-fit"
+  },
+  {
+    "id": 59,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which pseudo-element inserts generated content before an element?",
+    "options": [
+      "::before",
+      "::start",
+      "::prepend",
+      "::first"
+    ],
+    "answer": "::before"
+  },
+  {
+    "id": 60,
+    "category": "CSS",
+    "difficulty": "Hard",
+    "question": "Which CSS function defines minimum, preferred and maximum values?",
+    "options": [
+      "clamp()",
+      "range()",
+      "limit()",
+      "minmax3()"
+    ],
+    "answer": "clamp()"
+  },
+  {
+    "id": 61,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which keyword declares a constant?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "constant"
+    ],
+    "answer": "const"
+  },
+  {
+    "id": 62,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which method prints output in the browser console?",
+    "options": [
+      "console.log()",
+      "print()",
+      "display()",
+      "echo()"
+    ],
+    "answer": "console.log()"
+  },
+  {
+    "id": 63,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which symbol is commonly used for single-line comments?",
+    "options": [
+      "//",
+      "/*",
+      "#",
+      "<!--"
+    ],
+    "answer": "//"
+  },
+  {
+    "id": 64,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which function shows an alert box?",
+    "options": [
+      "alert()",
+      "prompt()",
+      "confirm()",
+      "message()"
+    ],
+    "answer": "alert()"
+  },
+  {
+    "id": 65,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which operator checks strict equality?",
+    "options": [
+      "===",
+      "=",
+      "!=",
+      "=>"
+    ],
+    "answer": "==="
+  },
+  {
+    "id": 66,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "var",
+      "define",
+      "variable"
+    ],
+    "answer": "let"
+  },
+  {
+    "id": 67,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which value represents an unassigned variable?",
+    "options": [
+      "undefined",
+      "empty",
+      "void-value",
+      "none"
+    ],
+    "answer": "undefined"
+  },
+  {
+    "id": 68,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which method adds an element to the end of an array?",
+    "options": [
+      "push()",
+      "pop()",
+      "add()",
+      "append()"
+    ],
+    "answer": "push()"
+  },
+  {
+    "id": 69,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which method removes the last element from an array?",
+    "options": [
+      "pop()",
+      "remove()",
+      "delete()",
+      "shift()"
+    ],
+    "answer": "pop()"
+  },
+  {
+    "id": 70,
+    "category": "JavaScript",
+    "difficulty": "Easy",
+    "question": "Which method converts a string to an integer?",
+    "options": [
+      "parseInt()",
+      "toInteger()",
+      "int()",
+      "convertInt()"
+    ],
+    "answer": "parseInt()"
+  },
+  {
+    "id": 71,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method converts JSON text into a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.object()",
+      "JSON.read()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "id": 72,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which event occurs when a user clicks an element?",
+    "options": [
+      "click",
+      "press",
+      "mouse",
+      "touch"
+    ],
+    "answer": "click"
+  },
+  {
+    "id": 73,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which array method returns elements that pass a test?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "choose()"
+    ],
+    "answer": "filter()"
+  },
+  {
+    "id": 74,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which array method creates a new array by transforming each element?",
+    "options": [
+      "map()",
+      "transform()",
+      "convert()",
+      "each()"
+    ],
+    "answer": "map()"
+  },
+  {
+    "id": 75,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method finds the first element satisfying a condition?",
+    "options": [
+      "find()",
+      "search()",
+      "first()",
+      "locate()"
+    ],
+    "answer": "find()"
+  },
+  {
+    "id": 76,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which keyword exits a loop immediately?",
+    "options": [
+      "break",
+      "stop",
+      "exit",
+      "end"
+    ],
+    "answer": "break"
+  },
+  {
+    "id": 77,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which keyword skips the current loop iteration?",
+    "options": [
+      "continue",
+      "skip",
+      "next",
+      "pass"
+    ],
+    "answer": "continue"
+  },
+  {
+    "id": 78,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which operator returns the remainder of division?",
+    "options": [
+      "%",
+      "/",
+      "mod",
+      "rem"
+    ],
+    "answer": "%"
+  },
+  {
+    "id": 79,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method converts an array into a string with a separator?",
+    "options": [
+      "join()",
+      "concat()",
+      "string()",
+      "merge()"
+    ],
+    "answer": "join()"
+  },
+  {
+    "id": 80,
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "question": "Which method removes the first element of an array?",
+    "options": [
+      "shift()",
+      "unshift()",
+      "removeFirst()",
+      "popFirst()"
+    ],
+    "answer": "shift()"
+  },
+  {
+    "id": 81,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which method reduces an array to a single value?",
+    "options": [
+      "reduce()",
+      "map()",
+      "join()",
+      "combine()"
+    ],
+    "answer": "reduce()"
+  },
+  {
+    "id": 82,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "What does DOM stand for?",
+    "options": [
+      "Document Object Model",
+      "Data Object Model",
+      "Document Oriented Method",
+      "Digital Object Management"
+    ],
+    "answer": "Document Object Model"
+  },
+  {
+    "id": 83,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which method selects an element using its ID?",
+    "options": [
+      "getElementById()",
+      "getElementByClass()",
+      "queryId()",
+      "selectById()"
+    ],
+    "answer": "getElementById()"
+  },
+  {
+    "id": 84,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which syntax creates an arrow function?",
+    "options": [
+      "() => {}",
+      "function => {}",
+      "-> {}",
+      "arrow() {}"
+    ],
+    "answer": "() => {}"
+  },
+  {
+    "id": 85,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which object represents the eventual result of an asynchronous operation?",
+    "options": [
+      "Promise",
+      "Future",
+      "AsyncResult",
+      "DeferredObject"
+    ],
+    "answer": "Promise"
+  },
+  {
+    "id": 86,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which keyword waits for a Promise inside an async function?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield"
+    ],
+    "answer": "await"
+  },
+  {
+    "id": 87,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which keyword defines a function that can use await?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "answer": "async"
+  },
+  {
+    "id": 88,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which operator returns the right-hand value when the left side is null or undefined?",
+    "options": [
+      "??",
+      "||",
+      "?:",
+      "default"
+    ],
+    "answer": "??"
+  },
+  {
+    "id": 89,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which collection stores unique values?",
+    "options": [
+      "Set",
+      "UniqueArray",
+      "MapSet",
+      "Distinct"
+    ],
+    "answer": "Set"
+  },
+  {
+    "id": 90,
+    "category": "JavaScript",
+    "difficulty": "Hard",
+    "question": "Which collection stores key-value pairs and supports keys of different types?",
+    "options": [
+      "Map",
+      "ObjectList",
+      "PairSet",
+      "Dictionary"
+    ],
+    "answer": "Map"
+  },
+  {
+    "id": 91,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "What is Bootstrap primarily used for?",
+    "options": [
+      "Building responsive web interfaces",
+      "Managing databases",
+      "Writing server code",
+      "Compiling Java"
+    ],
+    "answer": "Building responsive web interfaces"
+  },
+  {
+    "id": 92,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class creates a Bootstrap container?",
+    "options": [
+      ".container",
+      ".box",
+      ".wrapper",
+      ".bootstrap-container"
+    ],
+    "answer": ".container"
+  },
+  {
+    "id": 93,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class creates a primary button?",
+    "options": [
+      ".btn-primary",
+      ".button-blue",
+      ".primary-btn",
+      ".btn-main"
+    ],
+    "answer": ".btn-primary"
+  },
+  {
+    "id": 94,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class creates a success button?",
+    "options": [
+      ".btn-success",
+      ".success-button",
+      ".btn-green",
+      ".button-success"
+    ],
+    "answer": ".btn-success"
+  },
+  {
+    "id": 95,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class creates a navigation bar?",
+    "options": [
+      ".navbar",
+      ".navigation",
+      ".nav-bar",
+      ".menu"
+    ],
+    "answer": ".navbar"
+  },
+  {
+    "id": 96,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class makes an image responsive?",
+    "options": [
+      ".img-fluid",
+      ".responsive-img",
+      ".img-responsive",
+      ".fluid-image"
+    ],
+    "answer": ".img-fluid"
+  },
+  {
+    "id": 97,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class creates a card component?",
+    "options": [
+      ".card",
+      ".panel",
+      ".box-card",
+      ".bootstrap-card"
+    ],
+    "answer": ".card"
+  },
+  {
+    "id": 98,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class centers text?",
+    "options": [
+      ".text-center",
+      ".center-text",
+      ".align-center",
+      ".text-middle"
+    ],
+    "answer": ".text-center"
+  },
+  {
+    "id": 99,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which utility is used for Bootstrap margin spacing?",
+    "options": [
+      ".m-*",
+      ".margin-*",
+      ".space-*",
+      ".mg-*"
+    ],
+    "answer": ".m-*"
+  },
+  {
+    "id": 100,
+    "category": "Bootstrap",
+    "difficulty": "Easy",
+    "question": "Which class makes text bold?",
+    "options": [
+      ".fw-bold",
+      ".text-bold",
+      ".font-bold",
+      ".bold"
+    ],
+    "answer": ".fw-bold"
+  },
+  {
+    "id": 101,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which Bootstrap class creates a row?",
+    "options": [
+      ".row",
+      ".grid-row",
+      ".container-row",
+      ".flex-row-only"
+    ],
+    "answer": ".row"
+  },
+  {
+    "id": 102,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class defines a Bootstrap column?",
+    "options": [
+      ".col",
+      ".column",
+      ".grid-col",
+      ".cell"
+    ],
+    "answer": ".col"
+  },
+  {
+    "id": 103,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "What is the default number of Bootstrap grid columns in a row?",
+    "options": [
+      "12",
+      "10",
+      "16",
+      "24"
+    ],
+    "answer": "12"
+  },
+  {
+    "id": 104,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class hides an element?",
+    "options": [
+      ".d-none",
+      ".hide",
+      ".hidden",
+      ".display-none"
+    ],
+    "answer": ".d-none"
+  },
+  {
+    "id": 105,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class displays an element as flex?",
+    "options": [
+      ".d-flex",
+      ".flex-display",
+      ".display-flex",
+      ".show-flex"
+    ],
+    "answer": ".d-flex"
+  },
+  {
+    "id": 106,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class creates a navbar toggle button?",
+    "options": [
+      ".navbar-toggler",
+      ".nav-toggle",
+      ".navbar-button",
+      ".toggle-nav"
+    ],
+    "answer": ".navbar-toggler"
+  },
+  {
+    "id": 107,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which utility adds horizontal padding?",
+    "options": [
+      ".px-*",
+      ".py-*",
+      ".ph-*",
+      ".p-horizontal-*"
+    ],
+    "answer": ".px-*"
+  },
+  {
+    "id": 108,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class rounds an element's corners?",
+    "options": [
+      ".rounded",
+      ".radius",
+      ".rounded-corners",
+      ".border-radius"
+    ],
+    "answer": ".rounded"
+  },
+  {
+    "id": 109,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which Bootstrap component is used for modal dialogs?",
+    "options": [
+      ".modal",
+      ".dialog",
+      ".popup",
+      ".window"
+    ],
+    "answer": ".modal"
+  },
+  {
+    "id": 110,
+    "category": "Bootstrap",
+    "difficulty": "Medium",
+    "question": "Which class styles a table?",
+    "options": [
+      ".table",
+      ".styled-table",
+      ".table-bootstrap",
+      ".table-format"
+    ],
+    "answer": ".table"
+  },
+  {
+    "id": 111,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which Bootstrap breakpoint prefix targets screens at least 992px wide?",
+    "options": [
+      "lg",
+      "md",
+      "xl",
+      "sm"
+    ],
+    "answer": "lg"
+  },
+  {
+    "id": 112,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which utility sets an element's maximum width to 100%?",
+    "options": [
+      ".mw-100",
+      ".max-w-100",
+      ".w-max-100",
+      ".width-full"
+    ],
+    "answer": ".mw-100"
+  },
+  {
+    "id": 113,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which class enables horizontal scrolling for a wide table?",
+    "options": [
+      ".table-responsive",
+      ".table-scroll",
+      ".responsive-table",
+      ".overflow-table"
+    ],
+    "answer": ".table-responsive"
+  },
+  {
+    "id": 114,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which utility sets flex direction to column?",
+    "options": [
+      ".flex-column",
+      ".direction-column",
+      ".d-column",
+      ".column-flex"
+    ],
+    "answer": ".flex-column"
+  },
+  {
+    "id": 115,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which class applies auto margin on the start side?",
+    "options": [
+      ".ms-auto",
+      ".ml-auto-only",
+      ".margin-start-auto",
+      ".start-margin"
+    ],
+    "answer": ".ms-auto"
+  },
+  {
+    "id": 116,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which Bootstrap component provides collapsible content?",
+    "options": [
+      ".collapse",
+      ".collapsible",
+      ".accordion-only",
+      ".expand"
+    ],
+    "answer": ".collapse"
+  },
+  {
+    "id": 117,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which component groups multiple collapsible panels?",
+    "options": [
+      ".accordion",
+      ".collapse-group",
+      ".panel-group",
+      ".expand-group"
+    ],
+    "answer": ".accordion"
+  },
+  {
+    "id": 118,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which utility sets an element's position to sticky?",
+    "options": [
+      ".position-sticky",
+      ".sticky",
+      ".sticky-position",
+      ".pos-sticky"
+    ],
+    "answer": ".position-sticky"
+  },
+  {
+    "id": 119,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which utility adds a shadow?",
+    "options": [
+      ".shadow",
+      ".box-shadow",
+      ".shadowed",
+      ".elevation"
+    ],
+    "answer": ".shadow"
+  },
+  {
+    "id": 120,
+    "category": "Bootstrap",
+    "difficulty": "Hard",
+    "question": "Which Bootstrap utility sets width to 50%?",
+    "options": [
+      ".w-50",
+      ".width-half",
+      ".half-width",
+      ".col-6-only"
+    ],
+    "answer": ".w-50"
+  },
+  {
+    "id": 121,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is 15 + 27?",
+    "options": [
+      "42",
+      "40",
+      "41",
+      "43"
+    ],
+    "answer": "42"
+  },
+  {
+    "id": 122,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is 12 × 5?",
+    "options": [
+      "60",
+      "50",
+      "55",
+      "65"
+    ],
+    "answer": "60"
+  },
+  {
+    "id": 123,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is 100 ÷ 4?",
+    "options": [
+      "25",
+      "20",
+      "24",
+      "30"
+    ],
+    "answer": "25"
+  },
+  {
+    "id": 124,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is 25% of 200?",
+    "options": [
+      "50",
+      "25",
+      "75",
+      "100"
+    ],
+    "answer": "50"
+  },
+  {
+    "id": 125,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "If a pen costs ₹10, what is the cost of 5 pens?",
+    "options": [
+      "₹50",
+      "₹40",
+      "₹60",
+      "₹100"
+    ],
+    "answer": "₹50"
+  },
+  {
+    "id": 126,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is the average of 10 and 20?",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "30"
+    ],
+    "answer": "15"
+  },
+  {
+    "id": 127,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is 7²?",
+    "options": [
+      "49",
+      "14",
+      "42",
+      "56"
+    ],
+    "answer": "49"
+  },
+  {
+    "id": 128,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "A train travels 60 km in 2 hours. What is its speed?",
+    "options": [
+      "30 km/h",
+      "20 km/h",
+      "60 km/h",
+      "120 km/h"
+    ],
+    "answer": "30 km/h"
+  },
+  {
+    "id": 129,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "What is the next number: 2, 4, 6, 8, ?",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": 130,
+    "category": "Aptitude",
+    "difficulty": "Easy",
+    "question": "If 3 notebooks cost ₹90, what is the cost of one notebook?",
+    "options": [
+      "₹30",
+      "₹20",
+      "₹45",
+      "₹60"
+    ],
+    "answer": "₹30"
+  },
+  {
+    "id": 131,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "What is 20% of 450?",
+    "options": [
+      "90",
+      "80",
+      "100",
+      "70"
+    ],
+    "answer": "90"
+  },
+  {
+    "id": 132,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "The ratio 2:3 has a total of 25. What is the first part?",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "15"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": 133,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "What is the average of 12, 18 and 24?",
+    "options": [
+      "18",
+      "16",
+      "20",
+      "22"
+    ],
+    "answer": "18"
+  },
+  {
+    "id": 134,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "A product costing ₹500 is sold for ₹600. What is the profit percentage?",
+    "options": [
+      "20%",
+      "10%",
+      "15%",
+      "25%"
+    ],
+    "answer": "20%"
+  },
+  {
+    "id": 135,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "If 5 workers finish a job in 12 days, how many worker-days are required?",
+    "options": [
+      "60",
+      "50",
+      "72",
+      "17"
+    ],
+    "answer": "60"
+  },
+  {
+    "id": 136,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "A number increased by 20% becomes 120. What was the original number?",
+    "options": [
+      "100",
+      "96",
+      "110",
+      "90"
+    ],
+    "answer": "100"
+  },
+  {
+    "id": 137,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "What is the simple interest on ₹1000 at 10% per year for 2 years?",
+    "options": [
+      "₹200",
+      "₹100",
+      "₹120",
+      "₹210"
+    ],
+    "answer": "₹200"
+  },
+  {
+    "id": 138,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "A car covers 240 km in 4 hours. What is its average speed?",
+    "options": [
+      "60 km/h",
+      "50 km/h",
+      "80 km/h",
+      "40 km/h"
+    ],
+    "answer": "60 km/h"
+  },
+  {
+    "id": 139,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "If x + 15 = 42, what is x?",
+    "options": [
+      "27",
+      "25",
+      "26",
+      "30"
+    ],
+    "answer": "27"
+  },
+  {
+    "id": 140,
+    "category": "Aptitude",
+    "difficulty": "Medium",
+    "question": "What is the HCF of 18 and 24?",
+    "options": [
+      "6",
+      "3",
+      "12",
+      "9"
+    ],
+    "answer": "6"
+  },
+  {
+    "id": 141,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A sum becomes ₹1210 after 2 years at 10% compound interest annually. What was the principal?",
+    "options": [
+      "₹1000",
+      "₹900",
+      "₹1100",
+      "₹1050"
+    ],
+    "answer": "₹1000"
+  },
+  {
+    "id": 142,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A train 120 m long passes a pole in 6 seconds. What is its speed?",
+    "options": [
+      "20 m/s",
+      "18 m/s",
+      "24 m/s",
+      "15 m/s"
+    ],
+    "answer": "20 m/s"
+  },
+  {
+    "id": 143,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "If 8 machines produce 480 units in 6 hours, how many units does one machine produce per hour?",
+    "options": [
+      "10",
+      "12",
+      "8",
+      "16"
+    ],
+    "answer": "10"
+  },
+  {
+    "id": 144,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A can finish a job in 12 days and B in 18 days. How long will they take together?",
+    "options": [
+      "7.2 days",
+      "6 days",
+      "8 days",
+      "9 days"
+    ],
+    "answer": "7.2 days"
+  },
+  {
+    "id": 145,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "What is the probability of getting an even number on a fair six-sided die?",
+    "options": [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
+    ],
+    "answer": "1/2"
+  },
+  {
+    "id": 146,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A price is increased by 25% and then decreased by 20%. What is the net change?",
+    "options": [
+      "No change",
+      "5% increase",
+      "5% decrease",
+      "10% decrease"
+    ],
+    "answer": "No change"
+  },
+  {
+    "id": 147,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "The average of five numbers is 28. If four sum to 100, what is the fifth?",
+    "options": [
+      "40",
+      "35",
+      "30",
+      "45"
+    ],
+    "answer": "40"
+  },
+  {
+    "id": 148,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A boat moves at 12 km/h in still water and the stream is 3 km/h. What is its downstream speed?",
+    "options": [
+      "15 km/h",
+      "9 km/h",
+      "12 km/h",
+      "36 km/h"
+    ],
+    "answer": "15 km/h"
+  },
+  {
+    "id": 149,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "If 3x - 7 = 20, what is x?",
+    "options": [
+      "9",
+      "7",
+      "8",
+      "10"
+    ],
+    "answer": "9"
+  },
+  {
+    "id": 150,
+    "category": "Aptitude",
+    "difficulty": "Hard",
+    "question": "A bag has 3 red and 2 blue balls. What is the probability of drawing a red ball?",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/2",
+      "3/2"
+    ],
+    "answer": "3/5"
+  },
+  {
+    "id": 151,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "What is the capital of India?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+    ],
+    "answer": "New Delhi"
+  },
+  {
+    "id": 152,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "id": 153,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "How many days are there in a leap year?",
+    "options": [
+      "366",
+      "365",
+      "364",
+      "367"
+    ],
+    "answer": "366"
+  },
+  {
+    "id": 154,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Which is the largest ocean?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "id": 155,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Who wrote the national anthem of India?",
+    "options": [
+      "Rabindranath Tagore",
+      "Bankim Chandra Chattopadhyay",
+      "Sarojini Naidu",
+      "Subhas Chandra Bose"
+    ],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "id": 156,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Which is the largest continent?",
+    "options": [
+      "Asia",
+      "Africa",
+      "Europe",
+      "North America"
+    ],
+    "answer": "Asia"
+  },
+  {
+    "id": 157,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "How many colors are traditionally shown in a rainbow?",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "answer": "7"
+  },
+  {
+    "id": 158,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "answer": "Nitrogen"
+  },
+  {
+    "id": 159,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "Which country is famous for the Eiffel Tower?",
+    "options": [
+      "France",
+      "Italy",
+      "Spain",
+      "Germany"
+    ],
+    "answer": "France"
+  },
+  {
+    "id": 160,
+    "category": "General Knowledge",
+    "difficulty": "Easy",
+    "question": "What is the currency of Japan?",
+    "options": [
+      "Yen",
+      "Won",
+      "Dollar",
+      "Rupee"
+    ],
+    "answer": "Yen"
+  },
+  {
+    "id": 161,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which is the longest river in India?",
+    "options": [
+      "Ganga",
+      "Yamuna",
+      "Godavari",
+      "Narmada"
+    ],
+    "answer": "Ganga"
+  },
+  {
+    "id": 162,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Who was the first President of India?",
+    "options": [
+      "Rajendra Prasad",
+      "S. Radhakrishnan",
+      "Jawaharlal Nehru",
+      "V. V. Giri"
+    ],
+    "answer": "Rajendra Prasad"
+  },
+  {
+    "id": 163,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which Indian state has the largest area?",
+    "options": [
+      "Rajasthan",
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Uttar Pradesh"
+    ],
+    "answer": "Rajasthan"
+  },
+  {
+    "id": 164,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which organization has its headquarters in New York and works on international cooperation?",
+    "options": [
+      "United Nations",
+      "UNESCO",
+      "WHO",
+      "WTO"
+    ],
+    "answer": "United Nations"
+  },
+  {
+    "id": 165,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which instrument measures atmospheric pressure?",
+    "options": [
+      "Barometer",
+      "Thermometer",
+      "Hygrometer",
+      "Anemometer"
+    ],
+    "answer": "Barometer"
+  },
+  {
+    "id": 166,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which is the smallest continent by land area?",
+    "options": [
+      "Australia",
+      "Europe",
+      "Antarctica",
+      "South America"
+    ],
+    "answer": "Australia"
+  },
+  {
+    "id": 167,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Who is known as the Missile Man of India?",
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "C. V. Raman",
+      "Homi Bhabha",
+      "Vikram Sarabhai"
+    ],
+    "answer": "A. P. J. Abdul Kalam"
+  },
+  {
+    "id": 168,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which Indian festival is known as the festival of lights?",
+    "options": [
+      "Diwali",
+      "Holi",
+      "Onam",
+      "Baisakhi"
+    ],
+    "answer": "Diwali"
+  },
+  {
+    "id": 169,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which ocean lies between Africa and Australia?",
+    "options": [
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+    ],
+    "answer": "Indian Ocean"
+  },
+  {
+    "id": 170,
+    "category": "General Knowledge",
+    "difficulty": "Medium",
+    "question": "Which is the largest planet in the Solar System?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Neptune"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "id": 171,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which Article of the Indian Constitution deals with equality before law?",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "answer": "Article 14"
+  },
+  {
+    "id": 172,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Who founded the Maurya Empire?",
+    "options": [
+      "Chandragupta Maurya",
+      "Ashoka",
+      "Bindusara",
+      "Harsha"
+    ],
+    "answer": "Chandragupta Maurya"
+  },
+  {
+    "id": 173,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which Indian classical dance form originated in Kerala?",
+    "options": [
+      "Kathakali",
+      "Kathak",
+      "Bharatanatyam",
+      "Manipuri"
+    ],
+    "answer": "Kathakali"
+  },
+  {
+    "id": 174,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which strait separates India and Sri Lanka?",
+    "options": [
+      "Palk Strait",
+      "Bering Strait",
+      "Malacca Strait",
+      "Gibraltar Strait"
+    ],
+    "answer": "Palk Strait"
+  },
+  {
+    "id": 175,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which is the highest civilian award in India?",
+    "options": [
+      "Bharat Ratna",
+      "Padma Vibhushan",
+      "Padma Bhushan",
+      "Padma Shri"
+    ],
+    "answer": "Bharat Ratna"
+  },
+  {
+    "id": 176,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which Indian space mission first soft-landed near the Moon's south polar region?",
+    "options": [
+      "Chandrayaan-3",
+      "Chandrayaan-1",
+      "Mangalyaan",
+      "Chandrayaan-2"
+    ],
+    "answer": "Chandrayaan-3"
+  },
+  {
+    "id": 177,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which ancient university was located in present-day Bihar?",
+    "options": [
+      "Nalanda",
+      "Takshashila",
+      "Vikramashila",
+      "Ujjain"
+    ],
+    "answer": "Nalanda"
+  },
+  {
+    "id": 178,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which treaty ended World War I with Germany?",
+    "options": [
+      "Treaty of Versailles",
+      "Treaty of Paris",
+      "Treaty of Vienna",
+      "Treaty of Rome"
+    ],
+    "answer": "Treaty of Versailles"
+  },
+  {
+    "id": 179,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which branch of government interprets laws and the Constitution?",
+    "options": [
+      "Judiciary",
+      "Executive",
+      "Legislature",
+      "Election Commission"
+    ],
+    "answer": "Judiciary"
+  },
+  {
+    "id": 180,
+    "category": "General Knowledge",
+    "difficulty": "Hard",
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Iron",
+      "Aluminium",
+      "Copper"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "id": 181,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "What is H2O commonly known as?",
+    "options": [
+      "Water",
+      "Oxygen",
+      "Hydrogen",
+      "Salt"
+    ],
+    "answer": "Water"
+  },
+  {
+    "id": 182,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "Which organ pumps blood through the human body?",
+    "options": [
+      "Heart",
+      "Liver",
+      "Lung",
+      "Kidney"
+    ],
+    "answer": "Heart"
+  },
+  {
+    "id": 183,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "What force pulls objects toward Earth?",
+    "options": [
+      "Gravity",
+      "Magnetism",
+      "Friction",
+      "Pressure"
+    ],
+    "answer": "Gravity"
+  },
+  {
+    "id": 184,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "Which gas do humans need for respiration?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium"
+    ],
+    "answer": "Oxygen"
+  },
+  {
+    "id": 185,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "How many planets are in the Solar System?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "answer": "8"
+  },
+  {
+    "id": 186,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "Which part of a plant absorbs most water from soil?",
+    "options": [
+      "Roots",
+      "Leaves",
+      "Flowers",
+      "Fruit"
+    ],
+    "answer": "Roots"
+  },
+  {
+    "id": 187,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "What is the boiling point of water at sea level?",
+    "options": [
+      "100°C",
+      "90°C",
+      "80°C",
+      "120°C"
+    ],
+    "answer": "100°C"
+  },
+  {
+    "id": 188,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "Which vitamin is commonly produced in skin through sunlight exposure?",
+    "options": [
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin K"
+    ],
+    "answer": "Vitamin D"
+  },
+  {
+    "id": 189,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "What is the basic unit of life?",
+    "options": [
+      "Cell",
+      "Atom",
+      "Tissue",
+      "Organ"
+    ],
+    "answer": "Cell"
+  },
+  {
+    "id": 190,
+    "category": "Science",
+    "difficulty": "Easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "answer": "Mercury"
+  },
+  {
+    "id": 191,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which blood cells help fight infections?",
+    "options": [
+      "White blood cells",
+      "Red blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    "answer": "White blood cells"
+  },
+  {
+    "id": 192,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "What is the chemical symbol for sodium?",
+    "options": [
+      "Na",
+      "S",
+      "So",
+      "Sd"
+    ],
+    "answer": "Na"
+  },
+  {
+    "id": 193,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which process do plants use to make food using light?",
+    "options": [
+      "Photosynthesis",
+      "Respiration",
+      "Transpiration",
+      "Digestion"
+    ],
+    "answer": "Photosynthesis"
+  },
+  {
+    "id": 194,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "What is the SI unit of force?",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": "Newton"
+  },
+  {
+    "id": 195,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which part of the cell contains most genetic material?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Cell wall",
+      "Vacuole"
+    ],
+    "answer": "Nucleus"
+  },
+  {
+    "id": 196,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which gas is released during photosynthesis?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "Methane"
+    ],
+    "answer": "Oxygen"
+  },
+  {
+    "id": 197,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which simple machine uses a wheel and rope to lift loads?",
+    "options": [
+      "Pulley",
+      "Lever",
+      "Wedge",
+      "Screw"
+    ],
+    "answer": "Pulley"
+  },
+  {
+    "id": 198,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "What is the pH of a neutral solution at room temperature?",
+    "options": [
+      "7",
+      "0",
+      "14",
+      "5"
+    ],
+    "answer": "7"
+  },
+  {
+    "id": 199,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "Which planet has prominent rings?",
+    "options": [
+      "Saturn",
+      "Mars",
+      "Mercury",
+      "Venus"
+    ],
+    "answer": "Saturn"
+  },
+  {
+    "id": 200,
+    "category": "Science",
+    "difficulty": "Medium",
+    "question": "What type of energy is stored in a stretched spring?",
+    "options": [
+      "Elastic potential energy",
+      "Kinetic energy",
+      "Thermal energy",
+      "Nuclear energy"
+    ],
+    "answer": "Elastic potential energy"
+  },
+  {
+    "id": 201,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which law states that pressure and volume of a gas are inversely proportional at constant temperature?",
+    "options": [
+      "Boyle's law",
+      "Charles's law",
+      "Newton's law",
+      "Ohm's law"
+    ],
+    "answer": "Boyle's law"
+  },
+  {
+    "id": 202,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "What is the SI unit of electrical resistance?",
+    "options": [
+      "Ohm",
+      "Volt",
+      "Ampere",
+      "Coulomb"
+    ],
+    "answer": "Ohm"
+  },
+  {
+    "id": 203,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which organelle is primarily responsible for ATP production in eukaryotic cells?",
+    "options": [
+      "Mitochondrion",
+      "Ribosome",
+      "Golgi apparatus",
+      "Lysosome"
+    ],
+    "answer": "Mitochondrion"
+  },
+  {
+    "id": 204,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "What is the acceleration due to gravity near Earth's surface approximately?",
+    "options": [
+      "9.8 m/s²",
+      "98 m/s²",
+      "0.98 m/s²",
+      "4.9 m/s²"
+    ],
+    "answer": "9.8 m/s²"
+  },
+  {
+    "id": 205,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which particle has a negative electric charge?",
+    "options": [
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Photon"
+    ],
+    "answer": "Electron"
+  },
+  {
+    "id": 206,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which type of bond involves sharing electron pairs between atoms?",
+    "options": [
+      "Covalent bond",
+      "Ionic bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    "answer": "Covalent bond"
+  },
+  {
+    "id": 207,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which layer of Earth's atmosphere contains most weather phenomena?",
+    "options": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "answer": "Troposphere"
+  },
+  {
+    "id": 208,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which phenomenon explains the bending of light when it passes between media?",
+    "options": [
+      "Refraction",
+      "Reflection",
+      "Diffraction",
+      "Polarization"
+    ],
+    "answer": "Refraction"
+  },
+  {
+    "id": 209,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which molecule carries genetic instructions in most living organisms?",
+    "options": [
+      "DNA",
+      "ATP",
+      "Glucose",
+      "Lipid"
+    ],
+    "answer": "DNA"
+  },
+  {
+    "id": 210,
+    "category": "Science",
+    "difficulty": "Hard",
+    "question": "Which subatomic particle determines the atomic number of an element?",
+    "options": [
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Photon"
+    ],
+    "answer": "Proton"
+  }
+]

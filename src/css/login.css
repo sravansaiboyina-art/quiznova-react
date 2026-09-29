@@ -1,0 +1,597 @@
+/* =========================================
+   QUIZNOVA LOGIN PAGE
+========================================= */
+
+.login-screen {
+    min-height: 100vh;
+    display: flex;
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   LEFT BRAND SECTION
+========================================= */
+
+.login-brand {
+    width: 48%;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #2563eb 0%,
+        #1d4ed8 55%,
+        #1e40af 100%
+    );
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-brand::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 80px solid rgba(255,255,255,0.06);
+    top: -150px;
+    right: -150px;
+}
+
+.login-brand::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    bottom: -130px;
+    left: -100px;
+}
+
+.brand-content {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.brand-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.brand-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 45px;
+}
+
+.brand-content h1 span {
+    color: #bfdbfe;
+}
+
+.brand-content h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.brand-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #dbeafe;
+    max-width: 450px;
+    margin-bottom: 35px;
+}
+
+.brand-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.brand-features div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #eff6ff;
+}
+
+.brand-features i {
+    color: #bfdbfe;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   RIGHT LOGIN SECTION
+========================================= */
+
+.login-panel {
+    width: 52%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 480px;
+}
+
+
+/* =========================================
+   MOBILE LOGO
+========================================= */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.login-heading {
+    margin-bottom: 30px;
+}
+
+.login-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 13px;
+    border-radius: 30px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.login-heading h2 {
+    font-family: "Poppins", sans-serif;
+    color: #1e293b;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-heading p {
+    color: #64748b;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* =========================================
+   ALERTS
+========================================= */
+
+.login-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.login-alert.error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.login-alert.success {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.login-field {
+    margin-bottom: 20px;
+}
+
+.login-field label {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label label {
+    margin-bottom: 8px;
+}
+
+.forgot-btn {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.forgot-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.login-input {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbe2ea;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.login-input:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.10);
+}
+
+.login-input > i {
+    width: 48px;
+    text-align: center;
+    color: #64748b;
+    font-size: 17px;
+}
+
+.login-input input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1e293b;
+    font-size: 15px;
+    padding: 0 8px;
+}
+
+.login-input input::placeholder {
+    color: #94a3b8;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    color: #64748b;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   REMEMBER ME
+========================================= */
+
+.login-options {
+    margin-bottom: 22px;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #475569;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.remember-option input {
+    width: 16px;
+    height: 16px;
+    accent-color: #2563eb;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-submit {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition: all 0.2s ease;
+}
+
+.login-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.22);
+}
+
+.login-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================
+   SPINNER
+========================================= */
+
+.login-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255,255,255,0.35);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: loginSpin 0.7s linear infinite;
+}
+
+@keyframes loginSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================
+   LOGIN / REGISTER SWITCH
+========================================= */
+
+.login-switch {
+    text-align: center;
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.login-switch button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.login-switch button:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   GUEST
+========================================= */
+
+.guest-section {
+    margin-top: 20px;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #e2e8f0;
+}
+
+.guest-button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #cbd5e1;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.guest-button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    background: #f8fbff;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.login-bottom {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.login-bottom button {
+    border: none;
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.login-bottom button:hover {
+    color: #2563eb;
+}
+
+.login-bottom p {
+    color: #94a3b8;
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .login-brand {
+        width: 42%;
+        padding: 35px;
+    }
+
+    .login-panel {
+        width: 58%;
+        padding: 35px;
+    }
+
+    .brand-content h1 {
+        font-size: 34px;
+    }
+
+    .brand-content h2 {
+        font-size: 32px;
+    }
+
+    .brand-content p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .login-screen {
+        display: block;
+        background: #f8fafc;
+    }
+
+    .login-brand {
+        display: none;
+    }
+
+    .login-panel {
+        width: 100%;
+        min-height: 100vh;
+        padding: 25px 18px;
+        align-items: flex-start;
+    }
+
+    .login-card {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-logo-icon {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2563eb;
+        color: #ffffff;
+        border-radius: 11px;
+    }
+
+    .mobile-logo h2 {
+        margin: 0;
+        color: #2563eb;
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .login-heading {
+        text-align: center;
+    }
+
+    .login-heading h2 {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .login-panel {
+        padding: 20px 15px;
+    }
+
+    .login-heading h2 {
+        font-size: 24px;
+    }
+
+    .login-heading p {
+        font-size: 14px;
+    }
+
+    .login-input,
+    .login-submit {
+        height: 52px;
+    }
+
+    .login-badge {
+        font-size: 11px;
+    }
+}
