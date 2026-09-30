@@ -22,7 +22,7 @@ function Progress() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/progress",
+        "/api/progress",
         {
           headers: {
             Authorization: `Bearer ${token}`,
