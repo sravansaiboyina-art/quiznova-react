@@ -27,8 +27,8 @@ function Login() {
 
     try {
       const endpoint = isRegister
-        ? "http://localhost:5000/api/auth/register"
-        : "http://localhost:5000/api/auth/login";
+        ? "/api/auth/register"
+        : "/api/auth/login";
 
       const requestBody = isRegister
         ? {
