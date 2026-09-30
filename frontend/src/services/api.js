@@ -1,4 +1,52 @@
-const API_BASE_URL = "/api";
+const API_BASE_URL = (import.meta.env.VITE_API_URL || "/api").replace(/\/$/, "");
+
+/**
+ * Parse JSON safely so an HTML error page from a misconfigured deployment
+ * never becomes "Unexpected token '<'".
+ */
+async function readResponse(response) {
+  const contentType = response.headers.get("content-type") || "";
+  const raw = await response.text();
+
+  let data = null;
+
+  if (contentType.includes("application/json")) {
+    try {
+      data = raw ? JSON.parse(raw) : {};
+    } catch {
+      data = null;
+    }
+  } else if (raw) {
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      data = null;
+    }
+  }
+
+  if (!response.ok) {
+    const message =
+      data?.message ||
+      (raw && raw.trim().startsWith("<")
+        ? "The API server returned an HTML page. Check the deployed backend URL."
+        : "Request failed.");
+
+    throw new Error(message);
+  }
+
+  if (data === null) {
+    throw new Error(
+      "The API server returned an invalid response. Check the backend deployment."
+    );
+  }
+
+  return data;
+}
+
+async function request(path, options = {}) {
+  const response = await fetch(`${API_BASE_URL}${path}`, options);
+  return readResponse(response);
+}
 
 /* ================= QUESTIONS ================= */
 
@@ -14,113 +62,47 @@ export async function getQuestions({
 
   params.append("limit", limit);
 
-  const response = await fetch(
-    `${API_BASE_URL}/questions?${params.toString()}`
-  );
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch questions");
-  }
-
-  return response.json();
+  return request(`/questions?${params.toString()}`);
 }
 
 /* ================= QUESTION META ================= */
 
 export async function getQuestionMeta() {
-  const response = await fetch(
-    `${API_BASE_URL}/questions/meta`
-  );
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch question categories");
-  }
-
-  return response.json();
+  return request("/questions/meta");
 }
 
 /* ================= LOGIN ================= */
 
 export async function loginUser({ email, password }) {
-  const response = await fetch(
-    `${API_BASE_URL}/auth/login`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    }
-  );
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Login failed"
-    );
-  }
-
-  return data;
+  return request("/auth/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, password }),
+  });
 }
 
 /* ================= REGISTER ================= */
 
-export async function registerUser({
-  name,
-  email,
-  password,
-}) {
-  const response = await fetch(
-    `${API_BASE_URL}/auth/register`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    }
-  );
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Registration failed"
-    );
-  }
-
-  return data;
+export async function registerUser({ name, email, password }) {
+  return request("/auth/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, email, password }),
+  });
 }
 
 /* ================= CURRENT USER ================= */
 
 export async function getCurrentUser(token) {
-  const response = await fetch(
-    `${API_BASE_URL}/auth/me`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Authentication failed"
-    );
-  }
-
-  return data;
+  return request("/auth/me", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 }
 
 /* ================= QUIZ SUBMIT ================= */
@@ -137,35 +119,23 @@ export async function submitQuiz({
     throw new Error("Please login before submitting the quiz.");
   }
 
-  const response = await fetch(
-    `${API_BASE_URL}/quizzes/submit`,
-    {
-      method: "POST",
-
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-
-      body: JSON.stringify({
-        category,
-        difficulty,
-        answers,
-        studentName,
-      }),
-    }
-  );
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Failed to submit quiz"
-    );
-  }
-
-  return data;
+  return request("/quizzes/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      category,
+      difficulty,
+      answers,
+      studentName,
+    }),
+  });
 }
+
+/* ================= MY RESULTS ================= */
+
 export async function getMyResults() {
   const token = localStorage.getItem("quizNovaToken");
 
@@ -173,22 +143,25 @@ export async function getMyResults() {
     throw new Error("Please login first.");
   }
 
-  const response = await fetch(
-    `${API_BASE_URL}/quizzes/my-results`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
+  return request("/quizzes/my-results", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+}
 
-  const data = await response.json();
+/* ================= PROGRESS ================= */
 
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Failed to fetch quiz results"
-    );
+export async function getProgress() {
+  const token = localStorage.getItem("quizNovaToken");
+
+  if (!token) {
+    throw new Error("Please login to view your progress.");
   }
 
-  return data;
+  return request("/progress", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 }
