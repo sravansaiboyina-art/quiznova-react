@@ -16,13 +16,27 @@ app.use(cors({
 
 app.use(express.json({ limit: '1mb' }));
 
+// Keep this endpoint independent of MongoDB so deployment/routing can be
+// verified even while database networking is being configured.
+app.get('/api/health', (req, res) =>
+  res.json({ status: 'ok', service: 'QuizNova API' })
+);
+
 let dbConnectionPromise;
 
 async function ensureDatabaseConnection() {
   if (!dbConnectionPromise) {
     dbConnectionPromise = connectDB();
   }
-  return dbConnectionPromise;
+
+  try {
+    return await dbConnectionPromise;
+  } catch (error) {
+    // Do not permanently cache a failed connection attempt in a warm
+    // serverless instance. A later request can retry after Atlas is fixed.
+    dbConnectionPromise = undefined;
+    throw error;
+  }
 }
 
 app.use(async (req, res, next) => {
@@ -31,13 +45,14 @@ app.use(async (req, res, next) => {
     next();
   } catch (error) {
     console.error('Database connection failed:', error.message);
-    res.status(503).json({ message: 'Database unavailable' });
+    res.status(503).json({
+      message: 'Database unavailable',
+      detail: process.env.NODE_ENV === 'production'
+        ? 'Check the Vercel MongoDB environment variable and Atlas network access.'
+        : error.message
+    });
   }
 });
-
-app.get('/api/health', (req, res) =>
-  res.json({ status: 'ok', service: 'QuizNova API' })
-);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);
