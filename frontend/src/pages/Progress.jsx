@@ -10,6 +10,10 @@ function Progress() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  // Works locally and after Vercel deployment
+  const API_BASE_URL =
+    import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+
   useEffect(() => {
     let active = true;
 
@@ -17,6 +21,7 @@ function Progress() {
       try {
         const data = await getProgress();
 
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
         if (active) {
           setProgress(data);
         }
@@ -28,6 +33,22 @@ function Progress() {
         if (active) {
           setLoading(false);
         }
+=======
+      if (!token) {
+        throw new Error("Please login to view your progress.");
+      }
+
+      const response = await fetch(`${API_BASE_URL}/progress`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to load progress");
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
       }
     }
 
@@ -81,6 +102,11 @@ function Progress() {
       <Navbar />
 
       <main className="progress-page">
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+
+        {/* Header */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
         <section className="progress-header">
           <div className="container text-center">
             <span className="progress-badge">
@@ -99,6 +125,11 @@ function Progress() {
         </section>
 
         <div className="container">
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+
+          {/* Summary Cards */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
           <section className="progress-summary">
             <div className="progress-card">
               <div className="progress-card-icon">
@@ -141,6 +172,10 @@ function Progress() {
             </div>
           </section>
 
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+          {/* Performance Chart */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
           <section className="progress-section">
             <div className="section-title">
               <h2>
@@ -154,7 +189,15 @@ function Progress() {
               {attempts.length === 0 ? (
                 <div className="empty-state">
                   <i className="bi bi-bar-chart"></i>
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
                   <p>Complete a quiz to start tracking your performance.</p>
+=======
+
+                  <p>
+                    Complete a quiz to start tracking your
+                    performance.
+                  </p>
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
                 </div>
               ) : (
                 <div className="chart-bars">
@@ -177,6 +220,10 @@ function Progress() {
             </div>
           </section>
 
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+          {/* Category Performance */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
           <section className="progress-section">
             <div className="section-title">
               <h2>
@@ -205,6 +252,10 @@ function Progress() {
             </div>
           </section>
 
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+          {/* Difficulty Performance */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
           <section className="progress-section">
             <div className="section-title">
               <h2>
@@ -231,8 +282,13 @@ function Progress() {
             </div>
           </section>
 
+<<<<<<< HEAD:frontend/src/pages/Progress.jsx
+=======
+          {/* Feedback */}
+>>>>>>> f67dbda (Prepare QuizNova for deployment):src/pages/Progress.jsx
           <section className="feedback-section">
             <div className="feedback-header">
+
               <div className="feedback-icon">
                 <i className="bi bi-lightbulb-fill"></i>
               </div>
@@ -240,6 +296,7 @@ function Progress() {
                 <span>Personalized Feedback</span>
                 <h2>{feedback.level}</h2>
               </div>
+
             </div>
 
             <p className="feedback-message">{feedback.message}</p>
