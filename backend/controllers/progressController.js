@@ -8,7 +8,10 @@ export async function getProgress(req, res) {
       .sort({ createdAt: 1 })
       .lean();
 
-    // No quiz attempts yet
+    // --------------------------------
+    // No quiz attempts
+    // --------------------------------
+
     if (attempts.length === 0) {
       return res.json({
         summary: {
@@ -17,23 +20,32 @@ export async function getProgress(req, res) {
           averagePercentage: 0,
           bestPercentage: 0,
         },
+
         attempts: [],
+
         categoryPerformance: [],
+
         difficultyPerformance: [],
+
         feedback: {
           level: "Start Practicing",
+
           message:
             "You have not completed a quiz yet. Start your first quiz to begin tracking your learning progress.",
+
           recommendation:
             "Choose a category and attempt a quiz to build your performance history.",
+
           weakArea: null,
+
+          improvement: null,
         },
       });
     }
 
-    // -----------------------------
+    // --------------------------------
     // Overall statistics
-    // -----------------------------
+    // --------------------------------
 
     const totalQuizzes = attempts.length;
 
@@ -53,9 +65,9 @@ export async function getProgress(req, res) {
       ...attempts.map((attempt) => attempt.percentage)
     );
 
-    // -----------------------------
+    // --------------------------------
     // Attempt history
-    // -----------------------------
+    // --------------------------------
 
     const attemptHistory = attempts.map((attempt, index) => ({
       attempt: index + 1,
@@ -67,9 +79,9 @@ export async function getProgress(req, res) {
       date: attempt.createdAt,
     }));
 
-    // -----------------------------
+    // --------------------------------
     // Category performance
-    // -----------------------------
+    // --------------------------------
 
     const categoryMap = {};
 
@@ -82,22 +94,26 @@ export async function getProgress(req, res) {
       }
 
       categoryMap[attempt.category].total += 1;
-      categoryMap[attempt.category].percentage += attempt.percentage;
+
+      categoryMap[attempt.category].percentage +=
+        attempt.percentage;
     });
 
-    const categoryPerformance = Object.entries(categoryMap).map(
-      ([category, data]) => ({
-        category,
-        average: Math.round(
-          data.percentage / data.total
-        ),
-        attempts: data.total,
-      })
-    );
+    const categoryPerformance = Object.entries(
+      categoryMap
+    ).map(([category, data]) => ({
+      category,
 
-    // -----------------------------
+      average: Math.round(
+        data.percentage / data.total
+      ),
+
+      attempts: data.total,
+    }));
+
+    // --------------------------------
     // Difficulty performance
-    // -----------------------------
+    // --------------------------------
 
     const difficultyMap = {};
 
@@ -110,6 +126,7 @@ export async function getProgress(req, res) {
       }
 
       difficultyMap[attempt.difficulty].total += 1;
+
       difficultyMap[attempt.difficulty].percentage +=
         attempt.percentage;
     });
@@ -118,30 +135,44 @@ export async function getProgress(req, res) {
       difficultyMap
     ).map(([difficulty, data]) => ({
       difficulty,
+
       average: Math.round(
         data.percentage / data.total
       ),
+
       attempts: data.total,
     }));
 
-    // -----------------------------
+    // --------------------------------
     // Weak area
-    // -----------------------------
+    // --------------------------------
 
     let weakArea = null;
 
     if (categoryPerformance.length > 0) {
-      weakArea = categoryPerformance.reduce(
+      const lowestCategory = categoryPerformance.reduce(
         (weakest, current) =>
           current.average < weakest.average
             ? current
             : weakest
       );
+
+      /*
+       * Only show an improvement area if the
+       * category is actually below 75%.
+       *
+       * Example:
+       * Science = 100%  -> no weak area
+       * DBMS = 60%      -> DBMS becomes weak area
+       */
+      if (lowestCategory.average < 75) {
+        weakArea = lowestCategory;
+      }
     }
 
-    // -----------------------------
-    // Latest performance
-    // -----------------------------
+    // --------------------------------
+    // Latest and previous attempts
+    // --------------------------------
 
     const latestAttempt =
       attempts[attempts.length - 1];
@@ -151,46 +182,48 @@ export async function getProgress(req, res) {
         ? attempts[attempts.length - 2]
         : null;
 
-    // -----------------------------
-    // Feedback
-    // -----------------------------
+    // --------------------------------
+    // Personalized feedback
+    // --------------------------------
 
     let level;
     let message;
     let recommendation;
 
-    if (latestAttempt.percentage >= 90) {
+    const latestScore = latestAttempt.percentage;
+
+    if (latestScore >= 90) {
       level = "Excellent";
 
       message =
         "Excellent performance! You have demonstrated strong understanding of the quiz topics.";
 
       recommendation =
-        "Continue practicing and try higher-difficulty quizzes to challenge yourself.";
-    } else if (latestAttempt.percentage >= 75) {
+        "You are performing excellently. Try Medium or Hard quizzes to challenge your current knowledge level.";
+    } else if (latestScore >= 75) {
       level = "Very Good";
 
       message =
-        "Very good performance! You have a good understanding of the topics.";
+        "Very good performance! You have a strong understanding of the topics.";
 
       recommendation =
-        "Review the questions you missed and continue practicing to reach a higher score.";
-    } else if (latestAttempt.percentage >= 60) {
+        "Review the questions you missed and continue practicing to reach an excellent score.";
+    } else if (latestScore >= 60) {
       level = "Good Progress";
 
       message =
         "Good progress! You have a basic understanding of the topics.";
 
       recommendation =
-        "Practice more quizzes and review concepts where you made mistakes.";
-    } else if (latestAttempt.percentage >= 40) {
+        "Practice more quizzes and review the concepts where you made mistakes.";
+    } else if (latestScore >= 40) {
       level = "Needs Practice";
 
       message =
-        "Your current performance is below the target range.";
+        "Your current performance needs improvement.";
 
       recommendation =
-        "Review the concepts carefully and practice more quizzes to improve your score.";
+        "Review the concepts carefully and practice more quizzes before moving to higher difficulty levels.";
     } else {
       level = "More Practice Recommended";
 
@@ -198,12 +231,12 @@ export async function getProgress(req, res) {
         "More practice is recommended to strengthen your understanding of the quiz topics.";
 
       recommendation =
-        "Review the fundamental concepts and attempt quizzes regularly to improve your results.";
+        "Review the fundamental concepts and attempt easier quizzes regularly to build your understanding.";
     }
 
-    // -----------------------------
-    // Improvement feedback
-    // -----------------------------
+    // --------------------------------
+    // Improvement compared with previous quiz
+    // --------------------------------
 
     let improvement = null;
 
@@ -224,11 +257,11 @@ export async function getProgress(req, res) {
       }
     }
 
-    // -----------------------------
+    // --------------------------------
     // Final response
-    // -----------------------------
+    // --------------------------------
 
-    res.json({
+    return res.json({
       summary: {
         totalQuizzes,
         totalQuestions,
@@ -253,7 +286,7 @@ export async function getProgress(req, res) {
   } catch (error) {
     console.error("Progress error:", error);
 
-    res.status(500).json({
+    return res.status(500).json({
       message: "Failed to calculate progress",
     });
   }
