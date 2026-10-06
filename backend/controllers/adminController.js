@@ -200,9 +200,12 @@ export async function createAdminFromEnvironment() {
   }
 
   if (user.role !== "admin") {
+    // If this email was previously registered as a student, promote it
+    // and set the configured admin password once.
     user.role = "admin";
+    user.password = await bcrypt.hash(password, 12);
     await user.save();
-    console.log("QuizNova admin role granted to configured account.");
+    console.log("QuizNova admin role granted and password initialized for configured account.");
   }
 
   return user;
