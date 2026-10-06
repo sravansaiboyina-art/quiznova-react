@@ -6,6 +6,8 @@ import authRoutes from './routes/authRoutes.js';
 import questionRoutes from './routes/questionRoutes.js';
 import quizRoutes from './routes/quizRoutes.js';
 import progressRoutes from './routes/progressRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
+import { createAdminFromEnvironment } from './controllers/adminController.js';
 
 const app = express();
 
@@ -30,7 +32,9 @@ async function ensureDatabaseConnection() {
   }
 
   try {
-    return await dbConnectionPromise;
+    const connection = await dbConnectionPromise;
+    await createAdminFromEnvironment();
+    return connection;
   } catch (error) {
     // Do not permanently cache a failed connection attempt in a warm
     // serverless instance. A later request can retry after Atlas is fixed.
@@ -58,6 +62,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);
 app.use('/api/quizzes', quizRoutes);
 app.use('/api/progress', progressRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.use((req, res) =>
   res.status(404).json({ message: 'API route not found' })
