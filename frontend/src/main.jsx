@@ -15,6 +15,7 @@ import "./css/result.css";
 import "./css/contact.css";
 import "./css/login.css";
 import "./css/progress.css";
+import "./css/admin.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
