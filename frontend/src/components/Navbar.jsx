@@ -89,14 +89,12 @@ function Navbar() {
               </Link>
             </li>
 
-            {isAdmin && (
-              <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-                <Link className="btn btn-dark px-4" to="/admin">
-                  <i className="bi bi-shield-lock-fill me-1"></i>
-                  Admin
-                </Link>
-              </li>
-            )}
+            <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <Link className="nav-link fw-semibold" to="/admin">
+                <i className="bi bi-shield-lock-fill me-1"></i>
+                Admin
+              </Link>
+            </li>
 
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <Link
