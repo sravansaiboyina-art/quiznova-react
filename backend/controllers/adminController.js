@@ -179,7 +179,9 @@ export async function createAdminFromEnvironment() {
   const password = process.env.ADMIN_PASSWORD;
   const name = process.env.ADMIN_NAME?.trim() || "QuizNova Admin";
 
-  if (!email || !password) return null;
+  if (!email || !password) {
+    return null;
+  }
 
   if (password.length < 6) {
     throw new Error("ADMIN_PASSWORD must be at least 6 characters.");
@@ -189,24 +191,32 @@ export async function createAdminFromEnvironment() {
 
   if (!user) {
     const hashedPassword = await bcrypt.hash(password, 12);
+
     user = await User.create({
       name,
       email,
       password: hashedPassword,
       role: "admin",
     });
+
     console.log("QuizNova admin account created.");
+
     return user;
   }
 
-  if (user.role !== "admin") {
-    // If this email was previously registered as a student, promote it
-    // and set the configured admin password once.
-    user.role = "admin";
-    user.password = await bcrypt.hash(password, 12);
-    await user.save();
-    console.log("QuizNova admin role granted and password initialized for configured account.");
-  }
+  /*
+   * The configured ADMIN_EMAIL already exists.
+   *
+   * Synchronize the account with the Render environment
+   * so the ADMIN_PASSWORD can be used to log in.
+   */
+  user.name = name;
+  user.role = "admin";
+  user.password = await bcrypt.hash(password, 12);
+
+  await user.save();
+
+  console.log("QuizNova admin account synchronized.");
 
   return user;
 }
