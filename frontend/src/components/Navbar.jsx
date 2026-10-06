@@ -1,9 +1,33 @@
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { getCurrentUser } from "../services/api";
 
 function Navbar() {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("quizNovaUser") || "null");
+  const [user, setUser] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("quizNovaUser") || "null");
+    } catch {
+      return null;
+    }
+  });
   const isAdmin = user?.role === "admin";
+
+  useEffect(() => {
+    const token = localStorage.getItem("quizNovaToken");
+    if (!token) return;
+
+    getCurrentUser(token)
+      .then((data) => {
+        if (data?.user) {
+          setUser(data.user);
+          localStorage.setItem("quizNovaUser", JSON.stringify(data.user));
+        }
+      })
+      .catch(() => {
+        // Keep the existing local user state; protected routes handle invalid tokens.
+      });
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("quizNovaToken");
