@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem("quizNovaUser") || "null");
+  const isAdmin = user?.role === "admin";
 
   const handleLogout = () => {
     localStorage.removeItem("quizNovaToken");
@@ -62,6 +64,15 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+
+            {isAdmin && (
+              <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <Link className="btn btn-dark px-4" to="/admin">
+                  <i className="bi bi-shield-lock-fill me-1"></i>
+                  Admin
+                </Link>
+              </li>
+            )}
 
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
               <Link
