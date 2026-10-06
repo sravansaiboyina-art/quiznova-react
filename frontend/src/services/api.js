@@ -165,3 +165,68 @@ export async function getProgress() {
     },
   });
 }
+
+
+/* ================= ADMIN ================= */
+
+function adminHeaders() {
+  const token = localStorage.getItem("quizNovaToken");
+  if (!token) throw new Error("Please login as an administrator.");
+  return { Authorization: `Bearer ${token}` };
+}
+
+export async function getAdminStats() {
+  return request("/admin/stats", { headers: adminHeaders() });
+}
+
+export async function getAdminUsers() {
+  return request("/admin/users", { headers: adminHeaders() });
+}
+
+export async function updateAdminUserRole(id, role) {
+  return request(`/admin/users/${id}/role`, {
+    method: "PATCH",
+    headers: {
+      ...adminHeaders(),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ role }),
+  });
+}
+
+export async function getAdminQuestions() {
+  return request("/admin/questions", { headers: adminHeaders() });
+}
+
+export async function createAdminQuestion(question) {
+  return request("/admin/questions", {
+    method: "POST",
+    headers: {
+      ...adminHeaders(),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(question),
+  });
+}
+
+export async function updateAdminQuestion(id, question) {
+  return request(`/admin/questions/${id}`, {
+    method: "PUT",
+    headers: {
+      ...adminHeaders(),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(question),
+  });
+}
+
+export async function deleteAdminQuestion(id) {
+  return request(`/admin/questions/${id}`, {
+    method: "DELETE",
+    headers: adminHeaders(),
+  });
+}
+
+export async function getAdminAttempts() {
+  return request("/admin/attempts", { headers: adminHeaders() });
+}
